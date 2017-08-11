@@ -24,6 +24,8 @@ const Header = () =>
           style={{
             color: 'white',
             textDecoration: 'none',
+            fontFamily: 'Rubik, sans-serif'
+
           }}
         >
           aware

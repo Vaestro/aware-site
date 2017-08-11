@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Aware Site`,
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+      `gatsby-plugin-react-helmet`, {
+          resolve: `gatsby-plugin-google-analytics`,
+          options: {
+              trackingId: `UA-104390892-1`
+          }
+      }
+  ]
 }
