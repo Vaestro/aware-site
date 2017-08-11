@@ -196,12 +196,11 @@ ul, menu, dir {
 
 #app-illustrations {
   pointer-events: none;
-  position: absolute;
   display: -ms-flexbox;
   display: flex;
-  width: 1287px;
-  left: 50%;
-  margin-left: -644px;
+  width: 1000px;
+  margin-left: -50%;
+
   transform: scale(.5) rotate(-12deg) translateX(50px);
   transform-origin: 50% 20%;
 }
@@ -216,6 +215,9 @@ ul, menu, dir {
 
 @media (min-width: 670px) {
   #app-illustrations {
+    position: absolute;
+    left: 50%;
+
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 1000px;
@@ -238,15 +240,11 @@ ul, menu, dir {
   box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
 }
 
-@media (min-width: 670px) {
-  #app-illustrations .phone-big {
-    margin: 0;
-  }
-}
 
 #app-illustrations .phone-big {
-  display: none;
   margin: -115px 50px 0;
+  width: 267px;
+  height: 553px;
   -ms-flex-order: 1;
   order: 1;
 }
@@ -255,14 +253,13 @@ ul, menu, dir {
   #app-illustrations .phone-big {
     display: -ms-flexbox;
     display: flex;
-    width: 267px;
-    height: 553px;
     align-self: flex-end;
     margin-right: 100px;
     -ms-flex-order: 1;
     order: 1;
   }
 }
+
 
 @media (min-width: 880px) {
   #app-illustrations .phone-small {
